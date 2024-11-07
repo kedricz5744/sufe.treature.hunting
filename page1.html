@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUFE.Treature.Hunting</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .flex {
+        display: flex;
+      }
+      .shadow {
+        box-shadow: rgb(0 0 0/ 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daoHang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        font-size: 14px;
+        color: #666;
+      }
+      /*当屏幕宽度小于600的时候要改变的css*/
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neiRongLan {
+          flex-direction: column;
+        }
+        .shuJuQu {
+          flex-direction: column;
+        }
+        .youQu {
+          margin-left: 8px;
+        }
+        .shuJu {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+        /*移除滚动条*/
+        .neiRongLan::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2" class="ceBian baiSe shadow">
+      <!--头像栏-->
+      <div
+        style="
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 3px solid #999;
+        "
+        class="flex"
+      >
+        <img alt="" src="logo.jpg" width="40px" height="40px" />
+        <p style="margin-left: 10px">SUFE寻宝解密</p>
+      </div>
+      <!--导航栏-->
+      <div class="flex1">
+        <!--导航条-->
+        <div class="daoHang">社长楼哥</div>
+        <div class="daoHang">本站的开发者Zz</div>
+        <div class="daoHang">我们的
+            <a href="wechat.html">官方微信群</a>
+        </div>
+        <div class="daoHang">都行随便写点啥</div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div
+        style="
+          padding: 8px;
+          height: 60px;
+          z-index: 1;
+          justify-content: center;
+          align-items: center;
+        "
+        class="baiSe shadow mg8 flex"
+      >
+        <p style="font-size: larger;"><b>这还是一个简单的网站框架 祝大家能在其中找到想要的线索。</b></p>
+      </div>
+      <!--内容区-->
+      <div style="overflow: auto" class="flex1 flex shadow neiRongLan">
+        <!--左区-->
+        <div style="flex: 3" class="column flex mg8 shadow">
+          <!--数据区-->
+          <div class="flex">
+            <!--数据块-->
+            <div style="height: 100px" class="shuJu baiSe flex1 mgr8 shadow">
+              <a href="nothing.html">我想要传达的故事之一</a>
+            </div>
+            <div
+              style="height: 100px"
+              class="shuJu baiSe flex1 mgr8 shadow"
+            >
+            <a href="nothing.html">一些你也许想了解的</a>
+        </div>
+            <div
+              style="height: 100px"
+              class="shuJu baiSe flex1 mgr8 shadow"
+            >
+            <a href="nothing.html">一些你也许想了解的</a>
+        </div>
+            <div style="height: 100px" class="shuJu baiSe flex1 shadow"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+            <div
+              style="height: 160px; align-items: center"
+              class="baiSe mgt8 shadow flex"
+            >
+              <img
+                src="./assets/img/1.jpg"
+                alt="Zz画的"
+                width="250px"
+                height="150px"
+              />
+              <a
+                style="
+                  color: black;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: xx-large;
+                  text-align:start;
+                "
+                href="nothing.html"
+                >往期谜题</a
+              >
+            </div>
+            <div
+              style="height: 160px; align-items: center"
+              class="baiSe mgt8 shadow flex"
+            >
+              <img
+                src="./assets/img/1.jpg"
+                alt="Zz画的"
+                width="80px"
+                height="80px"
+              />
+              <a
+                style="
+                  color: black;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: xx-large;
+                "
+                href="nothing.html"
+                >娘口三三</a
+              >
+            </div>
+            <div
+              style="height: 160px; align-items: center"
+              class="baiSe mgt8 shadow flex"
+            >
+              <img
+              src="./assets/img/1.jpg"
+              alt="Zz画的"
+                width="80px"
+                height="80px"
+              />
+              <a href="page2.html"
+                >秋木苏</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="youQu column flex mgr8 mgt8 shadow">
+          <!--提示区-->
+          <div style="height: 150px" class="baiSe shadow"></div>
+          <!--消息区-->
+          <div style="height: 300px" class="baiSe mgt8 shadow"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
